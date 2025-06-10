@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <!-- Cabeçalho -->
+    <header>
+        <h1>Guia das Principais Tags do HTML</h1>
+        <hr>
+        <h2>Índice</h2>
+            <ul>
+                <li><a href="#estrutura">Estrutura</a></li>
+                <li><a href="#textos">Textos</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#imagens">Imagens</a></li>
+                <li><a href="#visuais">Recursos Visuais</a></li>
+                <li><a href="#formularios">Formulários</a></li>
+                <li><a href="#estilos">Estilos Inline</a></li>
+            </ul>
+    </header>
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Estrutura -->
+        <section id="estrutura">
+            <h2>Estrutura Básica</h2>
+            <p>Para o html temos a seguinte estrutura básica.</p>
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code>: Início do documento.</li>
+                <li><code>&lt;html&gt;</code>: Raiz do HTML.</li>
+                <li><code>&lt;head&gt;</code>: Informações da página.</li>
+                <li><code>&lt;body&gt;</code>: Conteúdo visível.</li>
+            </ul>
+        </section>
+        <!-- Textos -->
+        <section id="textos">
+            <h2>Tags de Texto</h2>
+            <p>Exemplo de uso de cabeçalhos:</p>
+            <h1>Título H1</h1>
+            <h2>Título H2</h2>
+            <h3>Título H3</h3>
+            <p>Assim por diante.</p>
+            <p>Parágrafo com <strong>negrito</strong>, <em>itálico</em> e <u>sublinhado</u>.</p>
+        </section>
+        <!-- Listas -->
+        <section id="listas">
+            <h2>Listas</h2>
+            <h3>Lista não ordenada:</h3>
+            <ul>
+                <li>Item A</li>
+                <li>Item B</li>
+            </ul>
+            <h3>Lista ordenada:</h3>
+            <ol>
+                <li>Primeiro</li>
+                <li>Segundo</li>
+            </ol>
+        </section>
+        <!-- Links -->
+        <section id="links">
+            <h2>Links</h2>
+            <p>Visite o site da <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a>.</p>
+        </section>
+        <!-- Imagens -->
+        <section id="imagens">
+            <h2>Imagens</h2>
+            <p>Exemplo de imagem com descrição:</p>
+            <figure>
+                <img src="https://via.placeholder.com/200" alt="Imagem exemplo">
+                <figcaption>Imagem de exemplo com 200x200 pixels</figcaption>
+            </figure>
+        </section>
+        <!-- Recursos Visuais -->
+        <section id="visuais">
+            <h2>Recursos Visuais</h2>
+            <h3>Áudio:</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+            <h3>Vídeo:</h3>
+            <video width="320" height="240" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </section>
+        <!-- Formulários -->
+        <section id="formularios">
+            <h2>Formulários</h2>
+            <p>Para os formulários não é diferente temos algumas que semânticas para faze-los. Dentro da tag <code>&lt;form&gt;</code> inserimos os <code>&lt;input&gt;</code> e o <code>&lt;label&gt;</code> exemplos de um formulário.</p>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <!-- Estilos Inline -->
+        <section id="estilos">
+            <h2>8. Estilos com Tags HTML (Inline)</h2>
+            <p>Essas tags afetam o estilo do texto diretamente:</p>
+            <ul>
+                <li><b>Texto em negrito com &lt;b&gt;</b></li>
+                <li><i>Texto em itálico com &lt;i&gt;</i></li>
+                <li><u>Texto sublinhado com &lt;u&gt;</u></li>
+                <li><mark>Texto marcado com &lt;mark&gt;</mark></li>
+                <li><small>Texto pequeno com &lt;small&gt;</small></li>
+                <li><del>Texto deletado com &lt;del&gt;</del></li>
+                <li><ins>Texto inserido com &lt;ins&gt;</ins></li>
+            </ul>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>Feito por um estudante de HTML - 2025</p>
+    </footer>
+</body>
+</html>
