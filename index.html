@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <header>
         <h1>Guia das Principais Tags do HTML</h1>
         <hr>
-        <h2>Índice</h2>
+        <h2 id="inicio">Índice</h2>
             <ul>
                 <li><a href="#estrutura">Estrutura</a></li>
                 <li><a href="#textos">Textos</a></li>
@@ -27,6 +27,7 @@
         <!-- Estrutura -->
         <section id="estrutura">
             <h2>Estrutura Básica</h2>
+            <small><a href="#inicio">(voltar)</a></small>
             <p>Para o html temos a seguinte estrutura básica.</p>
             <ul>
                 <li><code>&lt;!DOCTYPE html&gt;</code>: Início do documento.</li>
@@ -38,22 +39,26 @@
         <!-- Textos -->
         <section id="textos">
             <h2>Tags de Texto</h2>
+            <small><a href="#inicio">(voltar)</a></small>
             <p>Exemplo de uso de cabeçalhos:</p>
             <h1>Título H1</h1>
             <h2>Título H2</h2>
             <h3>Título H3</h3>
             <p>Assim por diante.</p>
-            <p>Parágrafo com <strong>negrito</strong>, <em>itálico</em> e <u>sublinhado</u>.</p>
+            <p>Parágrafo a sua tag é &lt;p&gt;</p>
         </section>
         <!-- Listas -->
         <section id="listas">
             <h2>Listas</h2>
+            <small><a href="#inicio">(voltar)</a></small>
             <h3>Lista não ordenada:</h3>
+            <p>São as listas representadas por círculos. Exemplos:</p>
             <ul>
                 <li>Item A</li>
                 <li>Item B</li>
             </ul>
             <h3>Lista ordenada:</h3>
+            <p>Listas enumeradas. Exemplos: </p>
             <ol>
                 <li>Primeiro</li>
                 <li>Segundo</li>
@@ -62,26 +67,32 @@
         <!-- Links -->
         <section id="links">
             <h2>Links</h2>
-            <p>Visite o site da <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a>.</p>
+            <small><a href="#inicio">(voltar)</a></small>
+            <p>Para os links temos a tag <code>&lt;a&gt;</code></p>
+            <p>Visite o site da <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN Web Docs</a>.</p>
         </section>
         <!-- Imagens -->
         <section id="imagens">
             <h2>Imagens</h2>
-            <p>Exemplo de imagem com descrição:</p>
+            <small><a href="#inicio">(voltar)</a></small>
+            <p>As imagens podem ser representadas de muitas formas, com a tag <code>&lt;figure&gt;</code> se quisermos mostrar uma imagem com descrição usamos o <code>&lt;figcaption&gt; em baixo da tag &lt;img&gt;</code>Exemplo de imagem com descrição:</p>
             <figure>
-                <img src="https://via.placeholder.com/200" alt="Imagem exemplo">
+                <img src="https://img.freepik.com/vetores-gratis/bonito-astronauta-andando-na-lua-ilustracao-de-icone-de-desenho-vetorial-icone-de-ciencia-tecnologia-isolado_138676-6041.jpg?semt=ais_items_boosted&w=740" alt="Imagem exemplo" width="200" height="200">
                 <figcaption>Imagem de exemplo com 200x200 pixels</figcaption>
             </figure>
         </section>
         <!-- Recursos Visuais -->
         <section id="visuais">
             <h2>Recursos Visuais</h2>
+            <small><a href="#inicio">(voltar)</a></small>
             <h3>Áudio:</h3>
+            <p>A sua tag é <code>&lt;audio&gt;</code>.</p>
             <audio controls>
                 <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
                 Seu navegador não suporta áudio.
             </audio>
             <h3>Vídeo:</h3>
+            <p>A sua tag é <code>&lt;video&gt;</code>.</p>
             <video width="320" height="240" controls>
                 <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                 Seu navegador não suporta vídeo.
@@ -90,7 +101,8 @@
         <!-- Formulários -->
         <section id="formularios">
             <h2>Formulários</h2>
-            <p>Para os formulários não é diferente temos algumas que semânticas para faze-los. Dentro da tag <code>&lt;form&gt;</code> inserimos os <code>&lt;input&gt;</code> e o <code>&lt;label&gt;</code> exemplos de um formulário.</p>
+            <small><a href="#inicio">(voltar)</a></small>
+            <p>Para os formulários não é diferente temos algumas que semânticas para faze-los. Dentro da tag &lt;form&gt; inserimos os &lt;input&gt; e o &lt;label&gt; exemplos de um formulário.</p>
             <form action="#" method="post">
                 <label for="nome">Nome:</label><br>
                 <input type="text" id="nome" name="nome"><br><br>
@@ -106,7 +118,8 @@
         </section>
         <!-- Estilos Inline -->
         <section id="estilos">
-            <h2>8. Estilos com Tags HTML (Inline)</h2>
+            <h2>Estilos com Tags HTML (Inline)</h2>
+            <small><a href="#inicio">(voltar)</a></small>
             <p>Essas tags afetam o estilo do texto diretamente:</p>
             <ul>
                 <li><b>Texto em negrito com &lt;b&gt;</b></li>
@@ -121,7 +134,7 @@
     </main>
     <!-- Rodapé -->
     <footer>
-        <p>Feito por um estudante de HTML - 2025</p>
+        <p>Feito por um estudante de HTML - 2025, Ref: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">mozzila</a></p>
     </footer>
 </body>
 </html>
